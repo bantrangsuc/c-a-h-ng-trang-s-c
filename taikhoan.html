@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vàng bạc thúy ngoạn store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <title>Đăng nhập | Tên Website</title>
+    <style>
+        /* Login Section - Tách biệt với CSS hiện có */
+        #login-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 80px;
+            background-color: #f5f5f5;
+            min-height: calc(100vh - 120px);
+        }
+
+        .login__container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .login__header h2 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .login__form .form__group {
+            margin-bottom: 20px;
+        }
+
+        .login__form label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .login__form input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #E3E6F3;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .login__form input:focus {
+            border-color: #088178;
+            outline: none;
+        }
+
+        .form__options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 13px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .remember-me input {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .forgot-password {
+            color: #088178;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-password:hover {
+            color: #06615a;
+        }
+
+        .login__button {
+            width: 100%;
+            padding: 12px;
+            background-color: #088178;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login__button:hover {
+            background-color: #06615a;
+        }
+
+        .register__link {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .register__link a {
+            color: #088178;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .register__link a:hover {
+            color: #06615a;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            #login-section {
+                padding: 40px 20px;
+            }
+            
+            .login__container {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .login__container {
+                padding: 25px 20px;
+            }
+            
+            .form__options {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="store/1.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li class="dropdown">
+        <a href="shop.html">Shop</a>
+        <ul class="dropdown-menu">  
+            <li class="dropdown"><a href="vang.html">Sản phẩm Vàng</a> 
+                    <ul class="loai-sp">
+                        <li><a href="man.html">Sản phẩm nam</a></li>
+                        <li><a href="girl.html">Sản phẩm nữ</a></li>
+                        <li><a href="Nhan.html">Nhẫn</a></li>
+                        <li><a href="day-chuyen.html">Dây chuyền</a></li>
+                        <li><a href="bong-tai.html">Bông tai</a></li>
+                        <li><a href="lac.html">lắc tay % lắc chân</a></li>
+                    </ul>
+                    
+            </li>
+             <li class="dropdown"><a href="bac.html">Sản phẩm bac</a> 
+                    <ul class="loai-sp">
+                        <li><a href="man.html">Sản phẩm nam</a></li>
+                        <li><a href="girl.html">Sản phẩm nữ</a></li>
+                        <li><a href="Nhan.html">Nhẫn</a></li>
+                        <li><a href="day-chuyen.html">Dây chuyền</a></li>
+                        <li><a href="bong-tai.html">Bông tai</a></li>
+                        <li><a href="lac.html">lắc</a></li>
+                    </ul>
+                    
+            </li>
+        </ul>
+    </li>
+
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="taikhoan.html">Account</a></li>
+    <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    <li><a href="#" id="close"><i class="fa-solid fa-xmark"></i></a></li>
+</ul>
+
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <!-- Header và các phần khác của website -->
+    
+    <section id="login-section">
+        <div class="login__container">
+            <div class="login__header">
+                <h2>Đăng nhập tài khoản</h2>
+            </div>
+            
+            <form class="login__form">
+                <div class="form__group">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" id="username" placeholder="Nhập email hoặc số điện thoại">
+                </div>
+                
+                <div class="form__group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu">
+                </div>
+                
+                <div class="form__options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Ghi nhớ đăng nhập
+                    </label>
+                    <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                </div>
+                
+                <button type="submit" class="login__button">Đăng nhập</button>
+                
+                <div class="register__link">
+                    Chưa có tài khoản? <a href="#">Đăng ký ngay</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer và các phần khác của website -->
+</body>
+</html>
